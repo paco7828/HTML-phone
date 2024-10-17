@@ -1,0 +1,52 @@
+#container {
+    border: 5px solid black;
+    height: 742px;
+    width: 422px;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    border-radius: 25px;
+    display: grid;
+    place-content: center;
+    background-color: #1f1f1f;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(parketta.jpg);
+}
+
+#screen {
+    background-image: url(phoneBG.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    width: 412px;
+    height: 732px;
+    /* Holds the html content */
+    display: grid;
+    place-content: center;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    z-index: 1;
+}
+
+#frontcam {
+    background-color: #1b1c1e;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 0;
+}
+
+#frontcamlense {
+    background-color: grey;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    border-radius: 50%;
+    top: 7px;
+    left: 6px;
+}

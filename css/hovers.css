@@ -1,0 +1,4 @@
+#homeGrid>div:hover {
+    opacity: 60%;
+    background-color: red;
+}

@@ -1,0 +1,29 @@
+#phoneButtons{
+    z-index: -1;
+}
+
+/* Volume up */
+#phoneButtons :first-child {
+    top: 100px;
+
+}
+
+/* Volume down */
+
+#phoneButtons :nth-child(2) {
+    top: 160px;
+}
+
+/* On-off  */
+
+#phoneButtons :last-child {
+    top: 240px;
+}
+
+#phoneButtons > div{
+    width: 5px;
+    height: 45px;
+    background-color: red;
+    position: absolute;
+    right: -9.7px;
+}

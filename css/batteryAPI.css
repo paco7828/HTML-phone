@@ -1,0 +1,72 @@
+#battery {
+  box-sizing: content-box;
+  width: 7.8em;
+  height: 17.5em;
+  border: 0.6em solid #0c0c0c;
+  border-radius: 0.6em;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 40%;
+  left: 33%;
+}
+
+#battery:before {
+  position: absolute;
+  content: "";
+  width: 5em;
+  height: 1.1em;
+  background-color: #0c0c0c;
+  top: -20px;
+  right: 1.5em;
+  border-radius: 0.3em
+}
+
+#charge {
+  position: absolute;
+  height: 6.5em;
+  width: 16.25em;
+  background-color: chartreuse;
+  bottom: 0em;
+}
+
+#charge-level {
+  position: absolute;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+#charging-time {
+  text-align: center;
+  font-size: 1.7em;
+  margin-top: 1.4em;
+}
+
+.active {
+  animation: charge-animation 3s infinite linear;
+}
+
+.active1 {
+  animation: colorChange 3s infinite linear;
+}
+
+
+@keyframes charge-animation {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 17.5em;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+
+  100% {
+    color: #0c0c0c;
+  }
+}

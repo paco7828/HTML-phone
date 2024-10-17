@@ -1,0 +1,70 @@
+#homeGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    bottom: 5px;
+    width: 400px;
+    height: 25px;
+    left: 15px;
+    border-radius: 10px;
+    transition: all 1.5s;
+}
+
+#homeGrid div {
+    width: 130px;
+    height: 25px;
+    border-radius: 15px;
+}
+
+#homeLeft>div {
+    display: grid;
+    width: 22px;
+    height: 22px;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    left: 55px;
+    place-content: center;
+    top: 2px;
+}
+
+#homeLeft>div>div {
+    display: grid;
+    width: 3px;
+    height: 18px;
+    background-color: black;
+    outline: 1px solid white;
+    border-radius: 2px;
+}
+
+#homeCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#homeCenter>div {
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+    outline: 1px solid white;
+    border-radius: 5px;
+}
+
+#homeRight>div {
+    width: 17px;
+    height: 2px;
+    background-color: black;
+    outline: 1px solid white;
+    position: absolute;
+    right: 55px;
+}
+
+#homeRight :nth-child(1) {
+    bottom: 8px;
+    transform: rotate(35deg);
+}
+
+#homeRight :nth-child(2) {
+    bottom: 17px;
+    transform: rotate(-35deg);
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/phoneButtons.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/spotifyScreen.css">
+    <link rel="stylesheet" href="css/buttonHelpBox.css">
+    <title>Document</title>
+</head>
+<style>
+
+    #screen {
+        background-image: linear-gradient(10deg, black 10.9%, grey 87.1%);
+    }
+
+</style>
+
+<body>
+    <div id="container">
+        <div id="screen">
+
+            <div id="buttonHelpBox"></div>
+
+            <a href="spotify:playlist/1CzRQxOQeesvgT8VciRcyW?si=fb2509c0d8bc49cb">
+                <div id="playlistInfo">
+                    <p>LEJÁTSZÁS A LEJÁTSZÁSI LISTÁBÓL</p>
+                    <h5>Chonklist</h5>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </a>
+
+            <a href="mainScreen.html">
+                <div id="twoLines">
+                    <div></div>
+                    <div></div>
+                </div>
+            </a>
+
+            <img id="musicJPG" src="images/testimg.jpg">
+
+            <div id="musicInfo">
+                <h3><a href="spotify:track/1Y5U2iZVmqPhEzC8fSOSoM?si=2a226b01d49444a7" target="_blank">Late Night</a>
+                    <h7><a href="spotify:artist/3ZDnaV6iJs9qprzGvZaxEn?si=Pq1xkOiGTnKaxoIoZaT8bg"
+                            target="_blank">Scxnks</a></h7>
+                </h3>
+            </div>
+
+            <div id="musicLine">
+                <div id="musicLineDot"></div>
+            </div>
+
+            <div id="startTime">0:00</div>
+            <div id="endTime">2:57</div>
+
+            <div id="heart">
+                <a href="#">
+                    <div id="heartBox"></div>
+                    <div id="heartLeft"></div>
+                    <div id="heartRight"></div>
+                </a>
+            </div>
+
+            <a href="#">
+                <div id="previousButton">
+                    <div id="previousButtonLeft"></div>
+                    <div id="previousButtonRight"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="playButton">
+                    <div id="playButtonTriangle"></div>
+                    <div id="playButtonRight"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="nextButton">
+                    <div id="nextButtonLeft"></div>
+                    <div id="nextButtonRight"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="removeButtonCircle">
+                    <div id="removeButtonLine"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="device">
+                    <div id="deviceIcon1"></div>
+                    <div id="deviceIcon2"></div>
+                    <p id="deviceName">REVISION-PC</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div id="share">
+                    <div id="topCircle" class="shareCircle"></div>
+                    <div id="middleCircle" class="shareCircle"></div>
+                    <div id="bottomCircle" class="shareCircle"></div>
+                    <div id="bottomLine" class="shareLine"></div>
+                    <div id="topLine" class="shareLine"></div>
+                </div>
+            </a>
+
+            <div id="frontcam">
+                <div id="frontcamlense"></div>
+            </div>
+
+            <div id="phoneButtons">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+
+
+    var playButton = document.getElementById("playButton")
+    var playButtonTriangle = document.getElementById("playButtonTriangle")
+    var playButtonRight = document.getElementById("playButtonRight")
+    var clickCount1 = 1
+    var musicLineDot = document.getElementById("musicLineDot")
+
+    playButtonTriangle.classList.add('playButtonTriangle')
+
+
+    playButton.addEventListener("click", () => {
+
+        clickCount1 += 1
+
+        if (clickCount1 % 2 == 0) {
+            playButtonTriangle.classList.remove('playButtonTriangle')
+            playButtonTriangle.classList.add('changePlayButtonTriangle');
+            playButtonRight.classList.add('changePlayButtonRight');
+            clickCount1 = 0
+            musicLineDot.classList.add('moveRight')
+
+        }
+        else {
+            playButtonTriangle.classList.remove('changePlayButtonTriangle')
+            playButtonRight.classList.remove('changePlayButtonRight')
+            playButtonTriangle.classList.add('playButtonTriangle')
+            musicLineDot.classList.remove('moveRight')
+        }
+
+
+    })
+
+    var heart = document.getElementById("heart")
+    var heartBox = document.getElementById("heartBox")
+    var heartLeft = document.getElementById("heartLeft")
+    var heartRight = document.getElementById("heartRight")
+    var clickCount2 = 1
+
+    heart.addEventListener("click", () => {
+
+        clickCount2 += 1
+
+        if (clickCount2 % 2 == 0) {
+
+            heartBox.style.backgroundColor = '#1DB954'
+            heartBox.style.border = '1px solid #1DB954'
+
+            heartLeft.style.borderLeft = '2px solid #1DB954'
+            heartLeft.style.backgroundColor = '#1DB954'
+
+            heartRight.style.borderRight = '2px solid #1DB954'
+            heartRight.style.backgroundColor = '#1DB954'
+
+            clickCount2 = 0
+        }
+
+        else {
+
+            heartBox.style.backgroundColor = 'white'
+            heartBox.style.border = '1px solid white'
+
+            heartLeft.style.borderLeft = '2px solid white'
+            heartLeft.style.backgroundColor = 'white'
+
+            heartRight.style.borderRight = '2px solid white'
+            heartRight.style.backgroundColor = 'white'
+
+        }
+    })
+
+</script>
+<script src="js/offButton.js"></script>
+<script src="js/volumebuttons.js"></script>
+
+</html>

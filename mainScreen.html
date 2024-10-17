@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/homeGrid.css">
+    <link rel="stylesheet" href="css/responsivity.css">
+    <link rel="stylesheet" href="css/hovers.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/phoneButtons.css">
+    <link rel="stylesheet" href="css/buttonHelpBox.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    
+
+    #centerGrid {
+        display: grid;
+        width: 360px;
+        height: 170px;
+        position: absolute;
+        bottom: 170px;
+        left: 30px;
+        grid-template-columns: 65px 65px 65px 65px 65px;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        place-content: center;
+    }
+
+    #centerGrid div {
+        width: 55px;
+        height: 55px;
+        position: relative;
+        left: 10px;
+        border-radius: 20px;
+    }
+
+    #grey {
+        background-color: rgb(97, 94, 94);
+        opacity: 90%;
+        display: grid;
+        grid-template-columns: 14px 14px 14px;
+        grid-template-rows: 14px 14px 14px;
+        place-items: center;
+    }
+
+    #grey img {
+        width: 8px;
+        height: 8px;
+        position: relative;
+        top: 5px;
+        left: 5px;
+    }
+
+    #centerGrid h6 {
+        font-weight: 400;
+        position: absolute;
+        bottom: -43px;
+        left: 8px;
+    }
+
+    img {
+        border-radius: 20px;
+        width: 50px;
+        height: 50px;
+        opacity: 100%;
+    }
+
+    #bottomGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 90px;
+        position: absolute;
+        bottom: 60px;
+        left: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #date-time {
+        position: absolute;
+        right: 30px;
+        bottom: -15px;
+    }
+
+    #cityName {
+        position: absolute;
+        right: 30px;
+        bottom: 40px;
+    }
+
+    #cityName img {
+        position: relative;
+        top: 5px;
+        width: 30px;
+        height: 30px;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div id="screen">
+            <div id="buttonHelpBox"></div>
+            <!-- ------------------CONTENT START----------------------------- -->
+
+            <div class="wrapper">
+                <p id="description"></p>
+                <p id="temp"></p>
+                <h4 id="date-time"></h4>
+                <h3 id="cityName"><img src="images/location.png"> Pécs</h3>
+            </div>
+
+            <div id="centerGrid">
+
+                <a href="chat.html">
+                    <div id="grey">
+                        <img src="images/discord.jpg">
+                        <img src="images/instagram.jpg">
+                        <img src="images/messenger.jpg">
+                        <img src="images/snapchat.jpg">
+                        <h6 style="left: 11px;">Chat</h6>
+                    </div>
+                </a>
+
+                <a href="google.html">
+                    <div id="grey">
+                        <img src="images/google.jpg">
+                        <img src="images/gmail.jpg">
+                        <img src="images/googlemaps.jpg">
+                        <img style="width: 12px" src="images/youtube.jpg">
+                        <img src="images/googledrive.jpg">
+                        <img src="images/googlephotos.jpg">
+                        <img src="images/googleplay.jpg">
+                        <h6>Google</h6>
+                    </div>
+                </a>
+                
+                <a href="eszkozok.html">
+                    <div id="grey">
+                        <img src="images/calculator.jpg">
+                        <img src="images/voicerecorder.jpg">
+                        <img src="images/settings.png">
+                        <img src="images/notes.png">
+                        <img src="images/clock.jpg">
+                        <img src="images/gallery.png">
+                        <img src="images/calendar.jpg">
+                        <h6>Eszközök</h6>
+                    </div>
+                </a>
+
+                <div><img src="images/life360.jpg">
+                    <h6>Life360</h6>
+                </div>
+
+                <div><img src="images/telekom.jpg">
+                    <h6>Telekom</h6>
+                </div>
+
+                <div><img src="images/kreta.jpg">
+                    <h6>Kréta</h6>
+                </div>
+
+                <a href="spotifyScreen.html">
+                    <div><img src="images/spotify.jpg">
+                        <h6>Spotify</h6>
+                    </div>
+                </a>
+
+                <div><img src="images/otp.jpg">
+                    <h6 style="width: 50px; height: 10px; bottom: -41px; left: 5px;">OTP Bank</h6>
+                </div>
+
+                <div><img src="images/kamera.jpg">
+                    <h6>Kamera</h6>
+                </div>
+
+                <div><img src="images/filc.jpg">
+                    <h6 style="width: 50px; left: 5px;">Filc Napló</h6>
+                </div>
+
+            </div>
+
+            <div id="bottomGrid">
+                <div><img src="images/telefon.jpg"></div>
+                <div><img src="images/uzenetek.jpg"></div>
+                <div><img src="images/chrome.jpg"></div>
+            </div>
+
+            <div id="homeGrid">
+                <div id="homeLeft">
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+                <div id="homeCenter">
+                    <div></div>
+                </div>
+                <div id="homeRight">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- ---------------CONTENT END--------------------------- -->
+            <div id="frontcam">
+                <div id="frontcamlense"></div>
+            </div>
+            <div id="phoneButtons">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/weather.js"></script>
+<script src="js/mainScreenClock.js"></script>
+<script src="js/onOffButton.js"></script>
+<script src="js/volumebuttons.js"></script>
+
+</html>

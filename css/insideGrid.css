@@ -1,0 +1,43 @@
+#insideGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 500px;
+    width: 350px;
+    background-color: rgba(120, 102, 102, 0.5);
+    z-index: 2;
+    position: absolute;
+    bottom: 60px;
+    border-radius: 15px;
+    color: white;
+    letter-spacing: 1px;
+    place-self: center;
+    text-align: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+#insideGrid div {
+    width: 53px;
+    height: 53px;
+    position: relative;
+    left: 25px;
+    top: 25px;
+}
+
+#insideGrid h6 {
+    font-weight: 500;
+    position: relative;
+    top: -20px;
+}
+
+#insideGrid h1 {
+    position: absolute;
+    top: -150px;
+    font-weight: 500;
+    font-size: 50px;
+}

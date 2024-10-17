@@ -1,0 +1,44 @@
+#clock {
+    color: #880808;
+}
+
+#time {
+    position: absolute;
+    font-size: 4em;
+    font-weight: 300;
+    bottom: 56%;
+    left: 28%;
+}
+
+#date {
+    position: relative;
+    top: -110px;
+    font-size: 1.2em;
+    left: -9%;
+}
+
+img {
+    width: 30px;
+    height: 32px;
+    position: absolute;
+    left: 45%;
+    top: 5%;
+}
+
+#fingerPrint {
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    left: 42%;
+    bottom: 5%;
+}
+
+#fingerPrint>img {
+    width: 70px;
+    height: 55px;
+    position: absolute;
+    left: -7px;
+    top: 0;
+}

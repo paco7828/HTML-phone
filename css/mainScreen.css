@@ -1,0 +1,84 @@
+#centerGrid {
+    display: grid;
+    width: 360px;
+    height: 170px;
+    position: absolute;
+    bottom: 170px;
+    left: 30px;
+    grid-template-columns: 65px 65px 65px 65px 65px;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    place-content: center;
+}
+
+#centerGrid div {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    left: 10px;
+    border-radius: 20px;
+}
+
+#grey {
+    background-color: rgb(97, 94, 94);
+    opacity: 90%;
+    display: grid;
+    grid-template-columns: 14px 14px 14px;
+    grid-template-rows: 14px 14px 14px;
+    place-items: center;
+}
+
+#grey img {
+    width: 8px;
+    height: 8px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+#centerGrid h6 {
+    font-weight: 400;
+    position: absolute;
+    bottom: -43px;
+    left: 8px;
+}
+
+img {
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    opacity: 100%;
+}
+
+#bottomGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 90px;
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#date-time {
+    position: absolute;
+    right: 30px;
+    bottom: -15px;
+}
+
+#cityName {
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+}
+
+#cityName img {
+    position: relative;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+}
